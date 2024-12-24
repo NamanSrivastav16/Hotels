@@ -4,15 +4,15 @@ const mongoose = require("mongoose");
 const menuSChema = new mongoose.Schema({
   name: {
     type: String,
-    require: true,
+    required: true,
   },
   price: {
     type: Number,
-    require: true,
+    required: true,
   },
   taste: {
     type: String,
-    require: true,
+    required: true,
     enum: ["sweet", "spicy", "sour"],
   },
   is_drink: {
